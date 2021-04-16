@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF8828172629778900C7C977 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8828162629778900C7C977 /* Game.swift */; };
+		AF8828232629BAA900C7C977 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8828222629BAA900C7C977 /* Shapes.swift */; };
+		AF88282B2629BB5A00C7C977 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88282A2629BB5A00C7C977 /* ContentView.swift */; };
+		AF88282C2629BB5A00C7C977 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88282A2629BB5A00C7C977 /* ContentView.swift */; };
+		AF88282D2629BB5A00C7C977 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88282A2629BB5A00C7C977 /* ContentView.swift */; };
+		AFCC4CDA2628852900204A28 /* perfectoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC4CD92628852900204A28 /* perfectoApp.swift */; };
+		AFCC4CDE2628852A00204A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCC4CDD2628852A00204A28 /* Assets.xcassets */; };
+		AFCC4CE12628852A00204A28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCC4CE02628852A00204A28 /* Preview Assets.xcassets */; };
+		AFCC4CEC2628852A00204A28 /* perfectoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC4CEB2628852A00204A28 /* perfectoTests.swift */; };
+		AFCC4CF72628852B00204A28 /* perfectoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC4CF62628852B00204A28 /* perfectoUITests.swift */; };
+		AFCC4D0D262886FE00204A28 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC4D0C262886FE00204A28 /* Colour.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFCC4CE82628852A00204A28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFCC4CCE2628852900204A28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFCC4CD52628852900204A28;
+			remoteInfo = perfecto;
+		};
+		AFCC4CF32628852B00204A28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFCC4CCE2628852900204A28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFCC4CD52628852900204A28;
+			remoteInfo = perfecto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF8828162629778900C7C977 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		AF8828222629BAA900C7C977 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		AF88282A2629BB5A00C7C977 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AFCC4CD62628852900204A28 /* perfecto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perfecto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCC4CD92628852900204A28 /* perfectoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfectoApp.swift; sourceTree = "<group>"; };
+		AFCC4CDD2628852A00204A28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFCC4CE02628852A00204A28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFCC4CE22628852A00204A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCC4CE72628852A00204A28 /* perfectoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = perfectoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCC4CEB2628852A00204A28 /* perfectoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfectoTests.swift; sourceTree = "<group>"; };
+		AFCC4CED2628852A00204A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCC4CF22628852B00204A28 /* perfectoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = perfectoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCC4CF62628852B00204A28 /* perfectoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfectoUITests.swift; sourceTree = "<group>"; };
+		AFCC4CF82628852B00204A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCC4D0C262886FE00204A28 /* Colour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colour.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFCC4CD32628852900204A28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCC4CE42628852A00204A28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCC4CEF2628852B00204A28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF88280F2629765500C7C977 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC4CD92628852900204A28 /* perfectoApp.swift */,
+				AFCC4CDD2628852A00204A28 /* Assets.xcassets */,
+				AFCC4CE22628852A00204A28 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AFCC4CCD2628852900204A28 = {
+			isa = PBXGroup;
+			children = (
+				AFCC4CD82628852900204A28 /* perfecto */,
+				AFCC4CEA2628852A00204A28 /* perfectoTests */,
+				AFCC4CF52628852B00204A28 /* perfectoUITests */,
+				AFCC4CD72628852900204A28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFCC4CD72628852900204A28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC4CD62628852900204A28 /* perfecto.app */,
+				AFCC4CE72628852A00204A28 /* perfectoTests.xctest */,
+				AFCC4CF22628852B00204A28 /* perfectoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFCC4CD82628852900204A28 /* perfecto */ = {
+			isa = PBXGroup;
+			children = (
+				AF88280F2629765500C7C977 /* App */,
+				AFCC4D0B262886E900204A28 /* Model */,
+				AFCC4D07262886DC00204A28 /* View */,
+				AFCC4CDF2628852A00204A28 /* Preview Content */,
+			);
+			path = perfecto;
+			sourceTree = "<group>";
+		};
+		AFCC4CDF2628852A00204A28 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC4CE02628852A00204A28 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFCC4CEA2628852A00204A28 /* perfectoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC4CEB2628852A00204A28 /* perfectoTests.swift */,
+				AFCC4CED2628852A00204A28 /* Info.plist */,
+			);
+			path = perfectoTests;
+			sourceTree = "<group>";
+		};
+		AFCC4CF52628852B00204A28 /* perfectoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC4CF62628852B00204A28 /* perfectoUITests.swift */,
+				AFCC4CF82628852B00204A28 /* Info.plist */,
+			);
+			path = perfectoUITests;
+			sourceTree = "<group>";
+		};
+		AFCC4D07262886DC00204A28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF88282A2629BB5A00C7C977 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFCC4D0B262886E900204A28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF8828162629778900C7C977 /* Game.swift */,
+				AFCC4D0C262886FE00204A28 /* Colour.swift */,
+				AF8828222629BAA900C7C977 /* Shapes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFCC4CD52628852900204A28 /* perfecto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCC4CFB2628852B00204A28 /* Build configuration list for PBXNativeTarget "perfecto" */;
+			buildPhases = (
+				AFCC4CD22628852900204A28 /* Sources */,
+				AFCC4CD32628852900204A28 /* Frameworks */,
+				AFCC4CD42628852900204A28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = perfecto;
+			productName = perfecto;
+			productReference = AFCC4CD62628852900204A28 /* perfecto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFCC4CE62628852A00204A28 /* perfectoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCC4CFE2628852B00204A28 /* Build configuration list for PBXNativeTarget "perfectoTests" */;
+			buildPhases = (
+				AFCC4CE32628852A00204A28 /* Sources */,
+				AFCC4CE42628852A00204A28 /* Frameworks */,
+				AFCC4CE52628852A00204A28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFCC4CE92628852A00204A28 /* PBXTargetDependency */,
+			);
+			name = perfectoTests;
+			productName = perfectoTests;
+			productReference = AFCC4CE72628852A00204A28 /* perfectoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFCC4CF12628852B00204A28 /* perfectoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCC4D012628852B00204A28 /* Build configuration list for PBXNativeTarget "perfectoUITests" */;
+			buildPhases = (
+				AFCC4CEE2628852B00204A28 /* Sources */,
+				AFCC4CEF2628852B00204A28 /* Frameworks */,
+				AFCC4CF02628852B00204A28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFCC4CF42628852B00204A28 /* PBXTargetDependency */,
+			);
+			name = perfectoUITests;
+			productName = perfectoUITests;
+			productReference = AFCC4CF22628852B00204A28 /* perfectoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFCC4CCE2628852900204A28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AFCC4CD52628852900204A28 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					AFCC4CE62628852A00204A28 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AFCC4CD52628852900204A28;
+					};
+					AFCC4CF12628852B00204A28 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AFCC4CD52628852900204A28;
+					};
+				};
+			};
+			buildConfigurationList = AFCC4CD12628852900204A28 /* Build configuration list for PBXProject "perfecto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFCC4CCD2628852900204A28;
+			productRefGroup = AFCC4CD72628852900204A28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFCC4CD52628852900204A28 /* perfecto */,
+				AFCC4CE62628852A00204A28 /* perfectoTests */,
+				AFCC4CF12628852B00204A28 /* perfectoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFCC4CD42628852900204A28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCC4CE12628852A00204A28 /* Preview Assets.xcassets in Resources */,
+				AFCC4CDE2628852A00204A28 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCC4CE52628852A00204A28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCC4CF02628852B00204A28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFCC4CD22628852900204A28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFCC4D0D262886FE00204A28 /* Colour.swift in Sources */,
+				AF88282B2629BB5A00C7C977 /* ContentView.swift in Sources */,
+				AF8828232629BAA900C7C977 /* Shapes.swift in Sources */,
+				AFCC4CDA2628852900204A28 /* perfectoApp.swift in Sources */,
+				AF8828172629778900C7C977 /* Game.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCC4CE32628852A00204A28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF88282C2629BB5A00C7C977 /* ContentView.swift in Sources */,
+				AFCC4CEC2628852A00204A28 /* perfectoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFCC4CEE2628852B00204A28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF88282D2629BB5A00C7C977 /* ContentView.swift in Sources */,
+				AFCC4CF72628852B00204A28 /* perfectoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFCC4CE92628852A00204A28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFCC4CD52628852900204A28 /* perfecto */;
+			targetProxy = AFCC4CE82628852A00204A28 /* PBXContainerItemProxy */;
+		};
+		AFCC4CF42628852B00204A28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFCC4CD52628852900204A28 /* perfecto */;
+			targetProxy = AFCC4CF32628852B00204A28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AFCC4CF92628852B00204A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFCC4CFA2628852B00204A28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFCC4CFC2628852B00204A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"perfecto/Preview Content\"";
+				DEVELOPMENT_TEAM = 2B3J4UV9AZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = perfecto/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rithmi.perfecto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFCC4CFD2628852B00204A28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"perfecto/Preview Content\"";
+				DEVELOPMENT_TEAM = 2B3J4UV9AZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = perfecto/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rithmi.perfecto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFCC4CFF2628852B00204A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B3J4UV9AZ;
+				INFOPLIST_FILE = perfectoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rithmi.perfectoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/perfecto.app/perfecto";
+			};
+			name = Debug;
+		};
+		AFCC4D002628852B00204A28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B3J4UV9AZ;
+				INFOPLIST_FILE = perfectoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rithmi.perfectoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/perfecto.app/perfecto";
+			};
+			name = Release;
+		};
+		AFCC4D022628852B00204A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B3J4UV9AZ;
+				INFOPLIST_FILE = perfectoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rithmi.perfectoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = perfecto;
+			};
+			name = Debug;
+		};
+		AFCC4D032628852B00204A28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B3J4UV9AZ;
+				INFOPLIST_FILE = perfectoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rithmi.perfectoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = perfecto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFCC4CD12628852900204A28 /* Build configuration list for PBXProject "perfecto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCC4CF92628852B00204A28 /* Debug */,
+				AFCC4CFA2628852B00204A28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCC4CFB2628852B00204A28 /* Build configuration list for PBXNativeTarget "perfecto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCC4CFC2628852B00204A28 /* Debug */,
+				AFCC4CFD2628852B00204A28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCC4CFE2628852B00204A28 /* Build configuration list for PBXNativeTarget "perfectoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCC4CFF2628852B00204A28 /* Debug */,
+				AFCC4D002628852B00204A28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCC4D012628852B00204A28 /* Build configuration list for PBXNativeTarget "perfectoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFCC4D022628852B00204A28 /* Debug */,
+				AFCC4D032628852B00204A28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFCC4CCE2628852900204A28 /* Project object */;
+}
