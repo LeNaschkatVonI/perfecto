@@ -45,12 +45,14 @@ struct SliderValueText: View {
         Text(number)
             .bold()
             .foregroundColor(Color("TextColor"))
+            .frame(width: 40.0)
     }
 }
 
 
 struct TextViews_Previews: PreviewProvider {
     static var previews: some View {
+        
         InstructionText(text: "bullseye")
         BigNumberText(text: "42")
         SliderValueText(number: "100")

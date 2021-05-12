@@ -7,20 +7,6 @@
 
 import SwiftUI
 
-struct infoTextShape: View {
-    
-    var info: String
-    
-    var body: some View {
-        RoundedRectangle(cornerRadius: 10)
-            .frame(height: 80)
-            .opacity(0.9)
-            .overlay(Text(info)
-                        .foregroundColor(.picoPink)
-                        .multilineTextAlignment(.center))
-}
-}
-
 struct anotherShape: View {
     var body: some View {
         Capsule()
@@ -36,7 +22,6 @@ struct anotherShape: View {
 struct previewProvider: PreviewProvider {
     
     static var previews: some View {
-        infoTextShape(info: "11")
         anotherShape()
     }
 }

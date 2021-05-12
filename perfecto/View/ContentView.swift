@@ -15,17 +15,11 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Color("Tint")
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            BackgroundView(game: $game)
             VStack {
                 InstructionView(game: $game)
                 SliderView(firstNumber: "1", secondNumber: "100", sliderValue: $sliderValue)
                 HitMeButton(game: $game, sliderValue: $sliderValue, isVisible: $isVisible)
-                HStack {
-                    infoTextShape(info: "Your score is \n \(game.score)")
-                    infoTextShape(info: "Your percentage is \(String(format: "%.2f", game.percentage))%")
-                    infoTextShape(info: "Your current round is \n \(game.round)")
-                }
                 .padding()
             }
         }
