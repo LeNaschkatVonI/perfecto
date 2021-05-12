@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8963668E264A82A9000FC37B /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8963668D264A82A9000FC37B /* TextViews.swift */; };
 		AF8828172629778900C7C977 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8828162629778900C7C977 /* Game.swift */; };
 		AF8828232629BAA900C7C977 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8828222629BAA900C7C977 /* Shapes.swift */; };
 		AF88282B2629BB5A00C7C977 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88282A2629BB5A00C7C977 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8963668D264A82A9000FC37B /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		AF8828162629778900C7C977 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		AF8828222629BAA900C7C977 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		AF88282A2629BB5A00C7C977 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				AF88282A2629BB5A00C7C977 /* ContentView.swift */,
+				8963668D264A82A9000FC37B /* TextViews.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				AF8828232629BAA900C7C977 /* Shapes.swift in Sources */,
 				AFCC4CDA2628852900204A28 /* perfectoApp.swift in Sources */,
 				AF8828172629778900C7C977 /* Game.swift in Sources */,
+				8963668E264A82A9000FC37B /* TextViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +471,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = rithmi.perfecto;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = naschkat.perfecto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,7 +494,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = rithmi.perfecto;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = naschkat.perfecto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

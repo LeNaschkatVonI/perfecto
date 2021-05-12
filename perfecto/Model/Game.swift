@@ -18,7 +18,7 @@ struct Game {
     mutating func points(sliderValue: Int) -> Double {
         
         closeToPerfect = 100 - abs(target - sliderValue)
-        
+ 
         score += closeToPerfect
         
         percentage = Double(score) / Double(round)

@@ -20,3 +20,23 @@ struct infoTextShape: View {
                         .multilineTextAlignment(.center))
 }
 }
+
+struct anotherShape: View {
+    var body: some View {
+        Capsule()
+            .strokeBorder(Color.white, lineWidth: 3, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+            .overlay(Text("Hit me".uppercased())
+                        .foregroundColor(.white)
+                        .bold()
+                        .font(.title3)
+                        .padding())
+    }
+}
+
+struct previewProvider: PreviewProvider {
+    
+    static var previews: some View {
+        infoTextShape(info: "11")
+        anotherShape()
+    }
+}
