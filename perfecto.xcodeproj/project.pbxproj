@@ -13,32 +13,11 @@
 		AF8828172629778900C7C977 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8828162629778900C7C977 /* Game.swift */; };
 		AF8828232629BAA900C7C977 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8828222629BAA900C7C977 /* Shapes.swift */; };
 		AF88282B2629BB5A00C7C977 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88282A2629BB5A00C7C977 /* ContentView.swift */; };
-		AF88282C2629BB5A00C7C977 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88282A2629BB5A00C7C977 /* ContentView.swift */; };
-		AF88282D2629BB5A00C7C977 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF88282A2629BB5A00C7C977 /* ContentView.swift */; };
 		AFCC4CDA2628852900204A28 /* perfectoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC4CD92628852900204A28 /* perfectoApp.swift */; };
 		AFCC4CDE2628852A00204A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCC4CDD2628852A00204A28 /* Assets.xcassets */; };
 		AFCC4CE12628852A00204A28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCC4CE02628852A00204A28 /* Preview Assets.xcassets */; };
-		AFCC4CEC2628852A00204A28 /* perfectoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC4CEB2628852A00204A28 /* perfectoTests.swift */; };
-		AFCC4CF72628852B00204A28 /* perfectoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC4CF62628852B00204A28 /* perfectoUITests.swift */; };
 		AFCC4D0D262886FE00204A28 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC4D0C262886FE00204A28 /* Colour.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AFCC4CE82628852A00204A28 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AFCC4CCE2628852900204A28 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AFCC4CD52628852900204A28;
-			remoteInfo = perfecto;
-		};
-		AFCC4CF32628852B00204A28 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AFCC4CCE2628852900204A28 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AFCC4CD52628852900204A28;
-			remoteInfo = perfecto;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8963668D264A82A9000FC37B /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
@@ -52,31 +31,11 @@
 		AFCC4CDD2628852A00204A28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFCC4CE02628852A00204A28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFCC4CE22628852A00204A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFCC4CE72628852A00204A28 /* perfectoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = perfectoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFCC4CEB2628852A00204A28 /* perfectoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfectoTests.swift; sourceTree = "<group>"; };
-		AFCC4CED2628852A00204A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFCC4CF22628852B00204A28 /* perfectoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = perfectoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFCC4CF62628852B00204A28 /* perfectoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfectoUITests.swift; sourceTree = "<group>"; };
-		AFCC4CF82628852B00204A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFCC4D0C262886FE00204A28 /* Colour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colour.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AFCC4CD32628852900204A28 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFCC4CE42628852A00204A28 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFCC4CEF2628852B00204A28 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -100,8 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				AFCC4CD82628852900204A28 /* perfecto */,
-				AFCC4CEA2628852A00204A28 /* perfectoTests */,
-				AFCC4CF52628852B00204A28 /* perfectoUITests */,
 				AFCC4CD72628852900204A28 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,8 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				AFCC4CD62628852900204A28 /* perfecto.app */,
-				AFCC4CE72628852A00204A28 /* perfectoTests.xctest */,
-				AFCC4CF22628852B00204A28 /* perfectoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,24 +88,6 @@
 				AFCC4CE02628852A00204A28 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		AFCC4CEA2628852A00204A28 /* perfectoTests */ = {
-			isa = PBXGroup;
-			children = (
-				AFCC4CEB2628852A00204A28 /* perfectoTests.swift */,
-				AFCC4CED2628852A00204A28 /* Info.plist */,
-			);
-			path = perfectoTests;
-			sourceTree = "<group>";
-		};
-		AFCC4CF52628852B00204A28 /* perfectoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AFCC4CF62628852B00204A28 /* perfectoUITests.swift */,
-				AFCC4CF82628852B00204A28 /* Info.plist */,
-			);
-			path = perfectoUITests;
 			sourceTree = "<group>";
 		};
 		AFCC4D07262886DC00204A28 /* View */ = {
@@ -194,42 +131,6 @@
 			productReference = AFCC4CD62628852900204A28 /* perfecto.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AFCC4CE62628852A00204A28 /* perfectoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AFCC4CFE2628852B00204A28 /* Build configuration list for PBXNativeTarget "perfectoTests" */;
-			buildPhases = (
-				AFCC4CE32628852A00204A28 /* Sources */,
-				AFCC4CE42628852A00204A28 /* Frameworks */,
-				AFCC4CE52628852A00204A28 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AFCC4CE92628852A00204A28 /* PBXTargetDependency */,
-			);
-			name = perfectoTests;
-			productName = perfectoTests;
-			productReference = AFCC4CE72628852A00204A28 /* perfectoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		AFCC4CF12628852B00204A28 /* perfectoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AFCC4D012628852B00204A28 /* Build configuration list for PBXNativeTarget "perfectoUITests" */;
-			buildPhases = (
-				AFCC4CEE2628852B00204A28 /* Sources */,
-				AFCC4CEF2628852B00204A28 /* Frameworks */,
-				AFCC4CF02628852B00204A28 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AFCC4CF42628852B00204A28 /* PBXTargetDependency */,
-			);
-			name = perfectoUITests;
-			productName = perfectoUITests;
-			productReference = AFCC4CF22628852B00204A28 /* perfectoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -241,14 +142,6 @@
 				TargetAttributes = {
 					AFCC4CD52628852900204A28 = {
 						CreatedOnToolsVersion = 12.4;
-					};
-					AFCC4CE62628852A00204A28 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = AFCC4CD52628852900204A28;
-					};
-					AFCC4CF12628852B00204A28 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = AFCC4CD52628852900204A28;
 					};
 				};
 			};
@@ -266,8 +159,6 @@
 			projectRoot = "";
 			targets = (
 				AFCC4CD52628852900204A28 /* perfecto */,
-				AFCC4CE62628852A00204A28 /* perfectoTests */,
-				AFCC4CF12628852B00204A28 /* perfectoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -279,20 +170,6 @@
 			files = (
 				AFCC4CE12628852A00204A28 /* Preview Assets.xcassets in Resources */,
 				AFCC4CDE2628852A00204A28 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFCC4CE52628852A00204A28 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFCC4CF02628852B00204A28 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,38 +191,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFCC4CE32628852A00204A28 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF88282C2629BB5A00C7C977 /* ContentView.swift in Sources */,
-				AFCC4CEC2628852A00204A28 /* perfectoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFCC4CEE2628852B00204A28 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF88282D2629BB5A00C7C977 /* ContentView.swift in Sources */,
-				AFCC4CF72628852B00204A28 /* perfectoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AFCC4CE92628852A00204A28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AFCC4CD52628852900204A28 /* perfecto */;
-			targetProxy = AFCC4CE82628852A00204A28 /* PBXContainerItemProxy */;
-		};
-		AFCC4CF42628852B00204A28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AFCC4CD52628852900204A28 /* perfecto */;
-			targetProxy = AFCC4CF32628852B00204A28 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AFCC4CF92628852B00204A28 /* Debug */ = {
@@ -510,90 +356,6 @@
 			};
 			name = Release;
 		};
-		AFCC4CFF2628852B00204A28 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2B3J4UV9AZ;
-				INFOPLIST_FILE = perfectoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = rithmi.perfectoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/perfecto.app/perfecto";
-			};
-			name = Debug;
-		};
-		AFCC4D002628852B00204A28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2B3J4UV9AZ;
-				INFOPLIST_FILE = perfectoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = rithmi.perfectoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/perfecto.app/perfecto";
-			};
-			name = Release;
-		};
-		AFCC4D022628852B00204A28 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2B3J4UV9AZ;
-				INFOPLIST_FILE = perfectoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = rithmi.perfectoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = perfecto;
-			};
-			name = Debug;
-		};
-		AFCC4D032628852B00204A28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2B3J4UV9AZ;
-				INFOPLIST_FILE = perfectoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = rithmi.perfectoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = perfecto;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -611,24 +373,6 @@
 			buildConfigurations = (
 				AFCC4CFC2628852B00204A28 /* Debug */,
 				AFCC4CFD2628852B00204A28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AFCC4CFE2628852B00204A28 /* Build configuration list for PBXNativeTarget "perfectoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AFCC4CFF2628852B00204A28 /* Debug */,
-				AFCC4D002628852B00204A28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AFCC4D012628852B00204A28 /* Build configuration list for PBXNativeTarget "perfectoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AFCC4D022628852B00204A28 /* Debug */,
-				AFCC4D032628852B00204A28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

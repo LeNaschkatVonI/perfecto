@@ -35,7 +35,7 @@ struct InstructionView: View {
                 .padding(.leading, 30)
                 .padding(.trailing, 30)
             
-            BigNumberText(text: "\(game.target)")
+            BigNumberText(text: String(game.target))
             Text("\(String(format: "%.2f", game.percentage))%")
         }
     }
@@ -66,7 +66,8 @@ struct HitMeButton: View {
         Button(action: {
             isVisible = true
             game.points(sliderValue: roundedSliderValue)
-            game.target = Int.random(in: 1...100)
+            game.bonus()
+            game.updatePercentage()
         }) {
             Text("Hit me".uppercased())
                 .bold()
@@ -85,7 +86,9 @@ struct HitMeButton: View {
                 .strokeBorder(Color.white, lineWidth: 5)
         )
         .alert(isPresented: $isVisible, content: {
-            return Alert(title: Text("Result"), message: Text("You have been claimed \(game.closeToPerfect) points \n Your total points sum is \(game.score)"), dismissButton: .default(Text("Dismiss")))
+            return Alert(title: Text("Result"), message: Text("Slider value is \(roundedSliderValue) \nYou have been claimed \(game.closeToPerfect) points \nBonus points were \(game.bonusPoints)\nYour total points sum is \(game.score)"), dismissButton: .default(Text("Dismiss")) {
+                game.startNewRound()
+            })
         })
     }
 }

@@ -17,9 +17,9 @@ struct BackgroundView: View {
             Spacer()
             BottomView(game: $game)
         }.padding()
-        .background(Color("Tint")
-                        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/))
-        
+        .background(
+            RingsView()
+        )
     }
 }
 
@@ -29,7 +29,11 @@ struct TopView: View {
     
     var body: some View {
         HStack {
-            RoundButtonStroke(systemName: "arrow.counterclockwise")
+            Button(action: {
+                game.restart()
+            }) {
+                RoundButtonStroke(systemName: "arrow.counterclockwise")
+            }
             Spacer()
             RoundButtonStroke(systemName: "list.dash")
         }
@@ -64,6 +68,24 @@ struct BottomView: View {
             gameStats(title: "Percentage", text: String(format: "%.1f", game.percentage))
             Spacer()
             gameStats(title: "Round", text: String(game.round))
+        }
+    }
+}
+
+struct RingsView: View {
+    var body: some View {
+        ZStack {
+            Color("Tint")
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            ForEach(1..<6) { ring in
+                let size = CGFloat(ring) * 100
+                let opacity = 0.9 - ( 0.1 * Double(ring))
+                Circle()
+                    .stroke(lineWidth: 20)
+                    .fill(RadialGradient(gradient: Gradient(colors: [.picoPink.opacity(opacity), Color("TextColor").opacity(0)]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: 100, endRadius: 300))
+                    .frame(width: size, height: size)
+                
+            }
         }
     }
 }

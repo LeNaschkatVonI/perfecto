@@ -22,6 +22,7 @@ struct RoundButtonStroke: View {
     }
 }
 
+
 struct RoundButtonFilled: View {
     
     var systemName: String
@@ -31,8 +32,8 @@ struct RoundButtonFilled: View {
             .frame(width: 56, height: 56)
             .foregroundColor(Color("ButtonColorFilled"))
             .background(
-            Circle()
-                .fill(Color("ButtonBackgroundColorFilled"))
+                Circle()
+                    .fill(Color("ButtonBackgroundColorFilled"))
             )
     }
 }
