@@ -18,10 +18,11 @@ struct ContentView: View {
             BackgroundView(game: $game)
             VStack {
                 InstructionView(game: $game)
-                SliderView(firstNumber: "1", secondNumber: "100", sliderValue: $sliderValue)
+                    .padding(.bottom, 100)
                 HitMeButton(game: $game, sliderValue: $sliderValue, isVisible: $isVisible)
-                .padding()
+                    .padding()
             }
+            SliderView(firstNumber: "1", secondNumber: "100", sliderValue: $sliderValue)
         }
     }
 }
@@ -36,7 +37,6 @@ struct InstructionView: View {
                 .padding(.trailing, 30)
             
             BigNumberText(text: String(game.target))
-            Text("\(String(format: "%.2f", game.percentage))%")
         }
     }
 }

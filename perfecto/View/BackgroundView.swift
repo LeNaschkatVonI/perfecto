@@ -73,13 +73,18 @@ struct BottomView: View {
 }
 
 struct RingsView: View {
+    
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         ZStack {
             Color("Tint")
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             ForEach(1..<6) { ring in
                 let size = CGFloat(ring) * 100
-                let opacity = 0.9 - ( 0.1 * Double(ring))
+                let darkOpacity = 0.3 - 0.05 * Double(ring)
+                let lightOpacity = 0.9 - 0.1 * Double(ring)
+                let opacity = colorScheme == .dark ? darkOpacity : lightOpacity
                 Circle()
                     .stroke(lineWidth: 20)
                     .fill(RadialGradient(gradient: Gradient(colors: [.picoPink.opacity(opacity), Color("TextColor").opacity(0)]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: 100, endRadius: 300))
