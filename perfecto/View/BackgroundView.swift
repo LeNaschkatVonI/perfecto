@@ -26,6 +26,7 @@ struct BackgroundView: View {
 struct TopView: View {
     
     @Binding var game: Game
+    @State private var sheetIsVisible = false
     
     var body: some View {
         HStack {
@@ -35,7 +36,13 @@ struct TopView: View {
                 RoundButtonStroke(systemName: "arrow.counterclockwise")
             }
             Spacer()
-            RoundButtonStroke(systemName: "list.dash")
+            Button(action: {
+                sheetIsVisible.toggle()
+            }) {
+                RoundButtonStroke(systemName: "list.dash")
+            }.sheet(isPresented: $sheetIsVisible, content: {
+                leaderBoardView()
+            })
         }
     }
 }
@@ -52,7 +59,7 @@ struct gameStats: View {
             .padding()
             .multilineTextAlignment(.center)
             .overlay(
-                RoundedRectangle(cornerRadius: 25)
+                RoundedRectangle(cornerRadius: Constants.General.roundedCornerRadius)
                     .strokeBorder(Color("ButtonStrokeColor"),lineWidth: 3, antialiased: true))
     }
 }
@@ -87,7 +94,7 @@ struct RingsView: View {
                 let opacity = colorScheme == .dark ? darkOpacity : lightOpacity
                 Circle()
                     .stroke(lineWidth: 20)
-                    .fill(RadialGradient(gradient: Gradient(colors: [.picoPink.opacity(opacity), Color("TextColor").opacity(0)]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: 100, endRadius: 300))
+                    .fill(RadialGradient(gradient: Gradient(colors: [.gray.opacity(opacity), Color("TextColor").opacity(0)]), center: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, startRadius: 100, endRadius: 300))
                     .frame(width: size, height: size)
                 
             }

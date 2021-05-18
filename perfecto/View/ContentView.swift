@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var sliderValue: Double = 50.0
-    @State private var isVisible: Bool = false
+    @State private var alertIsVisible: Bool = false
+    @State private var leaderBoardIsVisible: Bool = false
     @State private var game: Game = Game()
     
     var body: some View {
@@ -18,11 +19,21 @@ struct ContentView: View {
             BackgroundView(game: $game)
             VStack {
                 InstructionView(game: $game)
-                    .padding(.bottom, 100)
-                HitMeButton(game: $game, sliderValue: $sliderValue, isVisible: $isVisible)
-                    .padding()
+                    .padding(.bottom, alertIsVisible ? 0 : 100)
+                if alertIsVisible {
+                    PointsView(game: $game, sliderValue: $sliderValue, isVisible: $alertIsVisible)
+                        .transition(.scale)
+                } else {
+                    HitMeButton(game: $game, sliderValue: $sliderValue, isVisible: $alertIsVisible)
+                        .padding()
+                        .transition(.scale)
+                }
+                
             }
-            SliderView(firstNumber: "1", secondNumber: "100", sliderValue: $sliderValue)
+            if !alertIsVisible {
+                SliderView(firstNumber: "1", secondNumber: "100", sliderValue: $sliderValue)
+                    .transition(.scale)
+            }
         }
     }
 }
@@ -64,32 +75,22 @@ struct HitMeButton: View {
     }
     var body: some View {
         Button(action: {
-            isVisible = true
+            withAnimation {
+                isVisible = true
+            }
             game.points(sliderValue: roundedSliderValue)
             game.bonus()
-            game.updatePercentage()
         }) {
             Text("Hit me".uppercased())
                 .bold()
                 .font(.title3)
         }
         .padding(20.0)
-        .background(
-            ZStack {
-                Color.pink
-                LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.3), Color.clear]), startPoint: .top, endPoint: .bottom)
-            }
-        )
         .foregroundColor(.white)
         .overlay(
-            RoundedRectangle(cornerRadius: 20)
+            RoundedRectangle(cornerRadius: Constants.General.roundedCornerRadius)
                 .strokeBorder(Color.white, lineWidth: 5)
         )
-        .alert(isPresented: $isVisible, content: {
-            return Alert(title: Text("Result"), message: Text("Slider value is \(roundedSliderValue) \nYou have been claimed \(game.closeToPerfect) points \nBonus points were \(game.bonusPoints)\nYour total points sum is \(game.score)"), dismissButton: .default(Text("Dismiss")) {
-                game.startNewRound()
-            })
-        })
     }
 }
 

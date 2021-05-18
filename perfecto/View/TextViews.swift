@@ -49,12 +49,82 @@ struct SliderValueText: View {
     }
 }
 
+struct BodyText: View {
+    
+    var text: String
+    var body: some View {
+        Text(text)
+            .fontWeight(.semibold)
+            .multilineTextAlignment(.center)
+            .font(.subheadline)
+            .lineSpacing(15)
+        
+    }
+}
+
+struct PercentageText: View {
+    
+    var percentage: Double
+    var body: some View {
+        Text(String(percentage))
+            .bold()
+            .font(.title3)
+            .kerning(-1.0)
+            .foregroundColor(Color("TextColor"))
+        
+    }
+}
+
+struct DateText: View {
+    
+    var date: Date
+    var body: some View {
+        Text(date, style: .time)
+            .bold()
+            .font(.title3)
+            .kerning(-1.0)
+            .foregroundColor(Color("TextColor"))
+        
+    }
+}
+
+struct ButtonText: View {
+    
+    var text: String
+    var body: some View {
+        Text(text)
+            .bold()
+            .padding()
+            .background(Color("TextColor"))
+            .foregroundColor(.white)
+            .cornerRadius(15)
+    }
+}
+
+struct BigBoldText: View {
+     
+    var text: String
+    var body: some View {
+        Text(text)
+            .fontWeight(.black)
+            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            .foregroundColor(Color("TextColor"))
+            .kerning(2.1)
+    }
+}
 
 struct TextViews_Previews: PreviewProvider {
     static var previews: some View {
-        
-        InstructionText(text: "bullseye")
-        BigNumberText(text: "42")
-        SliderValueText(number: "100")
+        VStack {
+            InstructionText(text: "bullseye")
+            BigNumberText(text: "42")
+            SliderValueText(number: "100")
+            BodyText(text: "bodytext \n 🤯😥🤯")
+            ButtonText(text: "button")
+            DateText(date: Date())
+            PercentageText(percentage: 50.9)
+            BigBoldText(text: "Leaderboard")
+        }
+        .padding()
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 struct anotherShape: View {
     var body: some View {
         Capsule()
-            .strokeBorder(Color.white, lineWidth: 3, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+            .strokeBorder(Color.white, lineWidth: Constants.General.strokeWidth, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
             .overlay(Text("Hit me".uppercased())
                         .foregroundColor(.white)
                         .bold()

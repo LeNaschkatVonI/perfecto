@@ -13,15 +13,31 @@ struct RoundButtonStroke: View {
     var body: some View {
         Image(systemName: systemName)
             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            .foregroundColor(Color("ButtonColorFilled"))
-            .frame(width: 56, height: 56)
+            .foregroundColor(Color("TextColor"))
+            .frame(width: Constants.General.roundRectViewWidth, height: Constants.General.roundRectViewHeight)
             .overlay(
                 Circle()
-                    .strokeBorder(Color("ButtonStrokeColor"),lineWidth: 3.0, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                    .strokeBorder(Color("ButtonStrokeColor"),lineWidth: Constants.General.strokeWidth, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
             )
     }
 }
 
+struct RoundedTextView: View {
+    
+    var text: String
+    var body: some View {
+        
+        Text(text)
+            .bold()
+            .font(.title2)
+            .foregroundColor(Color("rowViewColor"))
+            .frame(width: Constants.General.roundRectViewWidth, height: Constants.General.roundRectViewHeight)
+            .overlay(
+                Circle()
+                    .strokeBorder(Color("ButtonStrokeColor"),lineWidth: Constants.General.strokeWidth, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+            )
+    }
+}
 
 struct RoundButtonFilled: View {
     
@@ -29,8 +45,8 @@ struct RoundButtonFilled: View {
     var body: some View {
         Image(systemName: systemName)
             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            .frame(width: 56, height: 56)
-            .foregroundColor(Color("ButtonColorFilled"))
+            .frame(width: Constants.General.roundRectViewWidth, height: Constants.General.roundRectViewHeight)
+            .foregroundColor(Color("TextColor"))
             .background(
                 Circle()
                     .fill(Color("ButtonBackgroundColorFilled"))
@@ -44,6 +60,7 @@ struct PreviewView: View {
         VStack {
             RoundButtonStroke(systemName: "list.bullet")
             RoundButtonFilled(systemName: "list.bullet")
+            RoundedTextView(text: "5")
         }
     }
 }
