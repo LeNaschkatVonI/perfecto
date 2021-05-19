@@ -41,7 +41,7 @@ struct TopView: View {
             }) {
                 RoundButtonStroke(systemName: "list.dash")
             }.sheet(isPresented: $sheetIsVisible, content: {
-                leaderBoardView()
+                leaderBoardView(game: $game)
             })
         }
     }

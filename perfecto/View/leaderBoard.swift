@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct leaderBoardView: View {
+    
+    @Binding var game: Game
+    
     var body: some View {
         ZStack {
             Color("Tint").edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack(spacing: 10) {
                 HeaderView()
                 labelView()
-                RowView(index: 1, percentage: 95.0, date: Date())
+                ScrollView {
+                    VStack(spacing: 10) {
+                        ForEach(game.leaderBoardEntries.indices) { i in
+                            let leaderBoardEntry = game.leaderBoardEntries[i]
+                            RowView(index: i, percentage: Double(leaderBoardEntry.percentage), date: leaderBoardEntry.date)
+                        }
+                    }
+                }
             }
         }
     }
@@ -24,6 +34,8 @@ struct HeaderView: View {
     
     @Environment(\.verticalSizeClass) var verticalSizeClass
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.presentationMode) var presentationMode
+    
     
     var body: some View {
         ZStack {
@@ -38,7 +50,9 @@ struct HeaderView: View {
             }
             HStack {
                 Spacer()
-                Button(action: {}) {
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }) {
                     RoundButtonFilled(systemName: "xmark")
                         .padding(.trailing)
                 }
@@ -90,12 +104,13 @@ struct RowView: View {
 }
 
 struct leaderBoard_Previews: PreviewProvider {
+    static private var game = Binding.constant(Game())
     static var previews: some View {
-        leaderBoardView()
-        leaderBoardView().preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
-        leaderBoardView()
+        leaderBoardView(game: game)
+        leaderBoardView(game: game).preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+        leaderBoardView(game: game)
             .previewLayout(.fixed(width: 560, height: 320))
-        leaderBoardView()
+        leaderBoardView(game: game)
             .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
             .previewLayout(.fixed(width: 560, height: 320))
     }

@@ -86,6 +86,12 @@ struct HitMeButton: View {
                 .font(.title3)
         }
         .padding(20.0)
+        .background(
+            ZStack {
+                Color("TextColor")
+                LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.3), Color.clear]), startPoint: .top, endPoint: .bottom)
+            }
+        )
         .foregroundColor(.white)
         .overlay(
             RoundedRectangle(cornerRadius: Constants.General.roundedCornerRadius)

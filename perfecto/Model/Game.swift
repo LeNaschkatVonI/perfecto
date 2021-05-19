@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+struct leaderBoardEntry {
+    var percentage: Int
+    var date: Date
+}
+
 struct Game {
     
     var target: Int = Int.random(in: 1...100)
@@ -15,6 +20,7 @@ struct Game {
     var closeToPerfect: Int = 0
     var percentage: Double = 0
     var bonusPoints: Int = 0
+    var leaderBoardEntries: [leaderBoardEntry] = []
     
     mutating func points(sliderValue: Int) -> Int {
         closeToPerfect = 100 - abs(target - sliderValue)
@@ -26,6 +32,8 @@ struct Game {
         round += 1
         target = Int.random(in: 1...100)
         bonusPoints = 0
+        leaderBoardEntries.append(leaderBoardEntry(percentage: Int(percentage), date: Date()))
+        leaderBoardEntries.sort { $0.percentage > $1.percentage }
     }
     
     mutating func updatePercentage() {
